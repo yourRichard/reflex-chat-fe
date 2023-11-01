@@ -85,12 +85,6 @@ def action_bar() -> rx.Component:
                 on_submit=State.process_question,
                 width="100%",
             ),
-            rx.text(
-                "ReflexGPT may return factually incorrect or misleading responses. Use discretion.",
-                font_size="xs",
-                color="#fff6",
-                text_align="center",
-            ),
             width="100%",
             max_w="3xl",
             mx="auto",

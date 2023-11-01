@@ -16,22 +16,11 @@ def navbar():
                 ),
                 rx.link(
                     rx.box(
-                        rx.image(src="favicon.ico", width=30, height="auto"),
-                        p="1",
-                        border_radius="6",
-                        bg="#F0F0F0",
-                        mr="2",
+                        rx.image(src="logo-dark.svg",width=60,height=50),
                     ),
                     href="/",
                 ),
-                rx.breadcrumb(
-                    rx.breadcrumb_item(
-                        rx.heading("ReflexGPT", size="sm"),
-                    ),
-                    rx.breadcrumb_item(
-                        rx.text(State.current_chat, size="sm", font_weight="normal"),
-                    ),
-                ),
+                
             ),
             rx.hstack(
                 rx.button(
@@ -61,7 +50,6 @@ def navbar():
         backdrop_filter="auto",
         backdrop_blur="lg",
         p="4",
-        border_bottom=f"1px solid {styles.border_color}",
         position="sticky",
         top="0",
         z_index="100",
